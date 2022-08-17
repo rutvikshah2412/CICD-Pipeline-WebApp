@@ -16,13 +16,13 @@ pipeline {
     stage ('Source Composition Analysis') {
       steps {
         
-//          dependencyCheck additionalArguments: 'scan="https://github.com/janardanpari/devsecops-test-2" --format HTML', odcInstallation: 'OWASP-Dependency-Check'
+            dependencyCheck additionalArguments: 'scan="https://github.com/rutvikshah2412/CICD-Pipeline-WebApp" --format HTML', odcInstallation: 'OWASP-Dependency-Check'
         
-         sh 'rm owasp* || true'
-         sh 'wget "https://raw.githubusercontent.com/rutvikshah2412/CICD-Pipeline-WebApp/main/owasp-dependency-check.sh" '
-         sh 'chmod +x owasp-dependency-check.sh'
-         sh 'bash owasp-dependency-check.sh'
-         sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
+//          sh 'rm owasp* || true'
+//          sh 'wget "https://raw.githubusercontent.com/rutvikshah2412/CICD-Pipeline-WebApp/main/owasp-dependency-check.sh" '
+//          sh 'chmod +x owasp-dependency-check.sh'
+//          sh 'bash owasp-dependency-check.sh'
+//          sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
         
       }
     }
