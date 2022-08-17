@@ -16,7 +16,7 @@ pipeline {
     stage ('Source Composition Analysis') {
       steps {
         
-            dependencyCheck additionalArguments: 'scan="https://github.com/rutvikshah2412/CICD-Pipeline-WebApp" --format HTML', odcInstallation: 'OWASP-Dependency-Check'
+//             dependencyCheck additionalArguments: 'scan="https://github.com/rutvikshah2412/CICD-Pipeline-WebApp" --format HTML', odcInstallation: 'OWASP-Dependency-Check'
         
 //          sh 'rm owasp* || true'
 //          sh 'wget "https://raw.githubusercontent.com/rutvikshah2412/CICD-Pipeline-WebApp/main/owasp-dependency-check.sh" '
