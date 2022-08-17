@@ -13,8 +13,8 @@ pipeline {
       }
     }
      
-    stage ('Source Composition Analysis') {
-      steps {
+//     stage ('Source Composition Analysis') {
+//       steps {
         
 //             dependencyCheck additionalArguments: 'scan="https://github.com/rutvikshah2412/CICD-Pipeline-WebApp" --format HTML', odcInstallation: 'OWASP-Dependency-Check'
         
@@ -24,8 +24,8 @@ pipeline {
 //          sh 'bash owasp-dependency-check.sh'
 //          sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
         
-      }
-    }
+//       }
+//     }
     
     stage ('Check-Git-Secrets') {
       steps {
